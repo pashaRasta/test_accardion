@@ -1,0 +1,192 @@
+.wrapp_content{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.header_wrapp{
+    widows: 100vw;
+    height: 100vh;
+    background: url('../img/header_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display:grid;
+    grid-template-columns:1fr 3fr 3fr 1fr;
+    grid-template-rows:1fr 4fr 1fr;
+    h1{
+            font-size: 34px;
+            // margin-top: 72px;
+            position: absolute;
+            width: 100%;
+            }
+        .span_menu{
+            grid-column: 2/4;
+            grid-row: 2;
+            max-width: 1200px;
+            min-width: 860px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+                 &>div{
+                    display:flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+            span{
+                position:relative;
+                width: 280px;
+                height: 280px;;
+                display:block;
+                border-radius:50%;
+                background:rgba(255, 255, 255, 0.46);
+                transition:0.8s;
+                border:1px solid rgba(255, 255, 255, 0);
+
+                &:hover{
+                    border:1px solid #3cbcb3;
+                    background: rgba(255, 255, 255, 0);
+                    
+                }
+
+                a{
+                    width: 100%;
+                    height: 150px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    vertical-align: center;
+                    text-decoration: none;
+                    color: #000;
+                }
+                img{
+                    max-height:73px;
+                }
+                p{
+                    padding-top: 20px;
+                }
+            }
+        }
+        }
+
+}
+
+
+.wrapper_slider{
+    height: 100vh;
+    width: 100%;
+    position:relative;
+    .header_wrapp_trade,
+    .header_wrappinvest,
+    .header_wrapp_attr_customers{
+        background:url('../img/bg_header_wrapp.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        .description_block{
+            margin-top: 40px;
+            width: 600px;
+            &>p{
+                display: flex;
+                padding-bottom: 12px;
+                padding-top: 12px;
+                padding-left: 20px;
+                position: relative;
+
+                span{
+                    color:#00b596;
+                    position: absolute;
+                    font-size: 24px;
+                    top: 8px;
+                    left: 0;
+                }
+            }
+            h4{
+                font-size: 22px;
+                padding-bottom: 22px;
+            }
+            button{
+                padding: 12px 24px;
+                font-size: 18px;
+                background-color:#00b596;
+                cursor: pointer;
+                border-radius:6px;
+                color:#fff;
+                font-weight: 600;
+                transition:0.3s;
+                &:hover{
+                    background:#08caa8;
+                }
+            }
+        }
+    }
+    .menu_liner{
+        z-index: 99;
+        position: absolute;
+        width: 1200px;
+       // padding-top: 40px;
+        display: flex;
+        justify-content: space-around;
+        left: 50%;
+        transform: translate(-50%, 0);
+        span{
+            width: 300px;
+            height: 70px;
+            padding-top: 40px;
+            text-align: center;
+            border: 2px solid rgba(255, 255, 255, 0);
+            transition:0.9s;
+            cursor: pointer;
+            &:hover{
+                border-bottom: 2px solid #77c2b1;
+
+
+            }
+
+        }
+    }
+
+
+    .header_wrapp_trade,
+    .header_wrappinvest,
+    .header_wrapp_attr_customers{
+        position:absolute;
+        .wrapp_content{
+        &>span{
+            padding-top: 198px;
+            width: 680px;
+            display:block;
+
+        }
+    }
+    }
+}
+
+
+//////////////////////////////////////
+.wrapper_slider{
+    display:none;
+}
+.active{
+    display:block!important;
+}
+
+
+// @-webkit-keyframes animation{
+//     100% {-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+//     0% {-webkit-transform:rotate(0deg);transform:rotate(0deg)}
+// }
+// @keyframes animation{
+//     100% {-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+//     0% {-webkit-transform:rotate(0deg);transform:rotate(0deg)}
+// }
+section#one{display:none;}
+section#two{display:none;}
+section#free{display:none;}
