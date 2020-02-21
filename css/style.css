@@ -10,15 +10,57 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 3fr 3fr 1fr;
   grid-template-columns: 1fr 3fr 3fr 1fr;
+  -ms-grid-rows: 1fr 4fr 1fr;
   grid-template-rows: 1fr 4fr 1fr; }
+  .header_wrapp .header_wrapp > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1; }
+  .header_wrapp .header_wrapp > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2; }
+  .header_wrapp .header_wrapp > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3; }
+  .header_wrapp .header_wrapp > *:nth-child(4) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4; }
+  .header_wrapp .header_wrapp > *:nth-child(5) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1; }
+  .header_wrapp .header_wrapp > *:nth-child(6) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2; }
+  .header_wrapp .header_wrapp > *:nth-child(7) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3; }
+  .header_wrapp .header_wrapp > *:nth-child(8) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 4; }
+  .header_wrapp .header_wrapp > *:nth-child(9) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1; }
+  .header_wrapp .header_wrapp > *:nth-child(10) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2; }
+  .header_wrapp .header_wrapp > *:nth-child(11) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3; }
+  .header_wrapp .header_wrapp > *:nth-child(12) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 4; }
   .header_wrapp h1 {
     font-size: 34px;
     position: absolute;
     width: 100%; }
   .header_wrapp .span_menu {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
     grid-column: 2/4;
+    -ms-grid-row: 2;
     grid-row: 2;
     max-width: 1200px;
     min-width: 860px;
@@ -26,12 +68,18 @@
     text-align: center;
     position: relative; }
     .header_wrapp .span_menu > div {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
       width: 100%;
       position: absolute;
       top: 50%;
       left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
       .header_wrapp .span_menu > div span {
         position: relative;
@@ -51,6 +99,8 @@
           position: absolute;
           top: 50%;
           left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
           text-align: center;
           vertical-align: center;
@@ -119,9 +169,14 @@
     z-index: 99;
     position: absolute;
     width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0); }
     .wrapper_slider .menu_liner span {
       width: 300px;
